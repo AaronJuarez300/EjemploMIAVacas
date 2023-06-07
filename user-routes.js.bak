@@ -30,7 +30,7 @@ const connection = mysql.createConnection({
     database: 'semi1p2'
 });
 
-
+/*//Obtener usuario prueba
 router.get("/getUsers", (request, response) => {
 
     connection.query('SELECT * FROM usuario', (err,rows) => {
@@ -39,7 +39,7 @@ router.get("/getUsers", (request, response) => {
       response.json({data:rows})
 
     });
-})
+})*/
 
 router.post('/uploadImage', upload.single('file'), async (req, res) => {
     const file = req.file
