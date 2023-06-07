@@ -33,7 +33,7 @@ const connection = mysql.createConnection({
 
 router.get("/getUsers", (request, response) => {
 
-    connection.query('SELECT * FROM usuario', (err,rows) => {
+    connection.query('SELECT * FROM usuario2', (err,rows) => {
       if(err) throw err;
 
       response.json({data:rows})
